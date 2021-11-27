@@ -1,0 +1,250 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-color: #eee;
+}
+
+/*DIseño de la barra lateral*/
+#sideBar{
+    position: fixed;/*Posicion fija*/
+    width: 220px;/*Ancho*/
+    height: 100%;/*Altura*/
+    background: #fff;
+    left: -220px;
+    transition: all .3s ease-in-out;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+}
+
+#sideBar.active{
+    left: 0;
+}
+
+/*Lista Desplegable, menu de opciones*/
+
+
+.contenedor-menu{
+    width: 100%;
+    display: inline-block;
+    line-height: 18px;
+}
+
+.contenedor-menu .menu{
+    width: 100%;
+}
+
+.contenedor-menu ul{
+    list-style: none;
+}
+/*Titulo y Logo*/
+
+.contenedor-menu .menuCabecera li a{
+    display: block;
+    color: #434343;
+    text-decoration: none;
+    padding: 15px 20px;
+    text-align: center;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.contenedor-menu .menuCabecera li{
+    padding-bottom: 15px;
+}
+.imgPerfil{
+    width: 100px; 
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 160px;
+}
+
+
+/*Menu de Opciones*/
+
+.contenedor-menu .menu li a{
+    color: #434343;
+    display: block;
+    text-decoration: none;
+    padding:20px;
+}
+
+.contenedor-menu .menu li a:hover{
+    background: #434343;
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+}
+
+
+.contenedor-menu .menu .icono{
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.contenedor-menu .menu .icono.izquierda{
+    float: left;
+    margin-right: 10px;
+}
+
+.contenedor-menu .menu .icono.derecha{
+    float: right;
+    margin-left: 10px;
+}
+
+.contenedor-menu .menu ul{
+    display: none;
+}
+
+.contenedor-menu .menu ul li a{
+    background: #fff;
+    color: #000;
+}
+
+.contenedor-menu .menu .activado > ul li{
+    background: #1a95d5;
+    color: #fff;
+}
+
+
+/*Diseño del boton*/
+
+#navcont{
+    margin: 0px;
+    padding: 0px;
+    margin-left: 0px;
+    transition: all .3s ease-in-out;
+
+}
+
+#navcont .toggle-btn{
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer; /*Para cuando pasa el cursor*/
+    color: #434343;
+
+}
+
+#navcont .toggle-btn:hover{
+    font-size: 15px; /*Tamaño del icono cuando pasa el cursor*/
+    color: #1a95d5;
+
+}
+
+/*Diseño del contenido*/
+/*Navbar*/
+
+#navcont.activa{
+    margin: 0px;
+    padding: 0px;
+    margin-left: 220px;
+    transition: all .3s ease-in-out;
+
+}
+
+/*Opciones del Navbar*/
+
+.navbar{
+    /*background: #34495E;*/
+    background: #fff;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+}
+
+
+.navbar ul{
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.navbar ul li{
+    display: inline-block; /*Se pone en una sola linea*/
+}
+
+
+.navbar ul li a{
+    border: 0 none;
+    border-radius: 0;
+    display: block;
+    padding: 4px;
+    text-decoration: none; /*Se borra la linea del subrayado*/
+    color: #434343;
+}
+
+.navbar ul li a:hover{
+    color: #1a95d5;
+}
+
+
+
+/*Contenido--Sistema*/
+
+.sistema{
+    padding-top: 10px;
+}
+
+
+
+.sistema .card{
+    width: 100%;
+    height: auto;
+    transition: all 0.25s;
+}
+
+.sistema .card:hover{
+    transform: none;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+}
+
+.sistema .card.cardespa{
+    margin-bottom: 30px;
+}
+
+.sistema .text1{
+    text-align: center;
+    font-size: 15px;
+    color: #000;
+}
+
+.sistema .iconoCar{
+    display: inline-block;
+    padding-left: 30%;
+    padding-right: 30%;
+    font-size: 58px;
+    color: #000;
+}
+
+
+
+/*Responsibe*/
+
+
+@media (max-width: 768px) {
+    #navcont.activa{
+        background: rgba(0, 0, 0, .6);
+        min-height: 100vh;
+
+    }
+
+    #navcont.activa .card{
+        opacity: .6;
+    }
+
+    .iconoCar{
+        display: block;
+        padding-left: 30%;
+        font-size: 80px;
+
+    }
+
+}
+
+

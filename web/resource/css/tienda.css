@@ -1,0 +1,447 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+body {
+    font-size: 20px;
+    color: #212529;
+    font-family: 'Lora', 'Times New Roman', serif;
+    background: #FAFAFA;
+}
+
+p {
+    line-height: 1.5;
+    margin: 30px 0;
+}
+
+p a {
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 800;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #212529;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+a:focus,
+a:hover {
+    color: #0085A1;
+}
+
+blockquote {
+    font-style: italic;
+    color: #868e96;
+}
+
+
+/**/
+
+#mainNav {
+    position: absolute;
+    border-bottom: 1px solid #e9ecef;
+    background-color: white;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding: 3px;
+}
+
+#mainNav .navbar-brand {
+    font-weight: 800;
+    color: #343a40;
+}
+
+#mainNav .navbar-toggler {
+    font-size: 12px;
+    font-weight: 800;
+    padding: 13px;
+    text-transform: uppercase;
+    color: #343a40;
+}
+
+#mainNav .navbar-nav>li.nav-item>a {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.imgLogo {
+    height: 45px;
+    width: auto;
+}
+
+@media only screen and (min-width: 992px) {
+    #mainNav {
+        border-bottom: 1px solid transparent;
+        background: transparent;
+    }
+    #mainNav .navbar-brand {
+        padding: 10px 20px;
+        color: #000;
+    }
+    #mainNav .navbar-brand:focus,
+    #mainNav .navbar-brand:hover {
+        color: rgba(255, 255, 255, 0.8);
+    }
+    #mainNav .navbar-nav>li.nav-item>a {
+        padding: 10px 20px;
+        color: #000;
+    }
+    #mainNav .navbar-nav>li.nav-item>a:focus,
+    #mainNav .navbar-nav>li.nav-item>a:hover {
+        color: #0085A1;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #mainNav {
+        -webkit-transition: background-color 0.2s;
+        transition: background-color 0.2s;
+        /* Force Hardware Acceleration in WebKit */
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-backface-visibility: hidden;
+    }
+    #mainNav.is-fixed {
+        /* 
+    cuando el usuario se desplaza hacia abajo, ocultamos el encabezado justo encima de la ventana gráfica */
+        position: fixed;
+        top: -80px;
+        -webkit-transition: -webkit-transform 0.2s;
+        transition: -webkit-transform 0.2s;
+        transition: transform 0.2s;
+        transition: transform 0.2s, -webkit-transform 0.2s;
+        border-bottom: 1px solid white;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    #mainNav.is-fixed .navbar-brand {
+        color: #212529;
+    }
+    #mainNav.is-fixed .navbar-brand:focus,
+    #mainNav.is-fixed .navbar-brand:hover {
+        color: #0085A1;
+    }
+    #mainNav.is-fixed .navbar-nav>li.nav-item>a {
+        color: #212529;
+    }
+    #mainNav.is-fixed .navbar-nav>li.nav-item>a:focus,
+    #mainNav.is-fixed .navbar-nav>li.nav-item>a:hover {
+        color: #0085A1;
+    }
+    #mainNav.is-visible {
+        /* if the user changes the scrolling direction, we show the header */
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+        top: -82px;
+    }
+}
+
+
+.imagen-logo {
+    height: 45px;
+    width: auto;
+}
+
+
+/*Pie de Pagina*/
+
+footer {
+    width: 100%;
+    height: auto;
+    background: #868e96;
+    padding: 50px;
+    margin-top: 150px;
+}
+
+footer span.copyright {
+    font-size: 12px;
+    line-height: 40px;
+    text-transform: none;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+footer ul.quicklinks {
+    font-size: 12px;
+    line-height: 40px;
+    margin-bottom: 0;
+    text-transform: none;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+ul.social-buttons {
+    margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+    font-size: 20px;
+    line-height: 50px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    color: white;
+    border-radius: 100%;
+    outline: none;
+    background-color: #212529;
+    text-align: center;
+}
+
+ul.social-buttons li a:active,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:hover {
+    background-color: #1a95d5;
+}
+
+.espacio {
+    margin-top: 50px;
+    margin-bottom: 73px;
+}
+
+
+.carruselContenidoText{
+    padding-left: 200px;
+    padding-top: 160px;
+}
+
+
+
+#barraNavegacion {
+    background: #eee;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    padding: 2px;
+}
+
+#barraimg .menuopciones ul li {
+    display: inline-block;
+    padding: 5px;
+}
+
+
+/*Menu de opciones*/
+
+#barraNavegacion .menuopciones ul {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#barraNavegacion .menuopciones ul li {
+    display: inline-block;
+    padding: 5px;
+}
+
+#barraNavegacion .menuopciones ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #000;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#barraNavegacion .menuopciones ul li a:hover {
+    color: #0085A1;
+}
+
+/*seccion*/
+
+section .contenido {
+    padding-top: 50px;  
+}
+
+.seccionIzquierda {
+    position: absolute;
+    width: 20%;
+    height: 100vh;
+}
+
+.seccionDerecha {
+    padding-left: 25%;
+    margin: 0%;
+    width: 95%;
+}
+
+.seccionIzquierda ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #eee;
+}
+
+.seccionIzquierda li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.seccionIzquierda li a:hover {
+    background-color: #0085A1;
+    color: white;
+}
+
+/*Efecto a las card*/
+
+.seccionDerecha .card {
+    margin-bottom: 30px;
+    /*overflow: hidden;
+    transition: all 0.25s;*/
+}
+
+.seccionDerecha .card .img-cont{
+    width: 400px;
+    height: 260px;
+
+}
+
+.seccionDerecha .card .imgEstilo{
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+
+    background: #000000;
+    text-align: center;
+}
+.seccionDerecha .card .imgEstilo * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.seccionDerecha .card .imgEstilo img {
+    opacity: 1;
+    width: 100%;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+.seccionDerecha .card .imgEstilo figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 3em 3em;
+    width: 100%;
+    height: 100%;
+}
+.seccionDerecha .card .imgEstilo figcaption::before {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    bottom: 50%;
+    left: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    content: '';
+    opacity: 0;
+    background-color: #ffffff;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+.seccionDerecha .card .imgEstilo h2,
+.seccionDerecha .card .imgEstilo p {
+    margin: 0 0 5px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+}
+.seccionDerecha .card .imgEstilo h2 {
+    word-spacing: -0.15em;
+    font-size: 16px;
+    text-transform: uppercase;
+    -webkit-transform: translate3d(0%, 50%, 0);
+    transform: translate3d(0%, 50%, 0);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.seccionDerecha .card .imgEstilo p {
+    font-size: 14px;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+.seccionDerecha .card .imgEstilo a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    color: #ffffff;
+}
+.seccionDerecha .card .imgEstilo:hover img {
+    opacity: 0.35;
+}
+.seccionDerecha .card .imgEstilo:hover figcaption h2 {
+    opacity: 1;
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+.seccionDerecha .card .imgEstilo:hover figcaption p {
+    opacity: 0.9;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+.seccionDerecha .card .imgEstilo:hover figcaption::before {
+    background: rgba(255, 255, 255, 0);
+    top: 30px;
+    bottom: 30px;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+
+/*Slide*/
+.slide .card{
+    height: 400px;
+    width: 445px;
+}
+
+.slide .card img{
+    height: 400px;
+    width: 445px;
+}
+
+/********/
+
+
+
+
+
+
+/*******/
+.far-icon {
+    font-size: 40px;
+}
+
+
+.frame-count {
+    width: 400px;
+    height: 260px;
+}
+
+@media (max-width: 992px) {
+    .espacio {
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+    .seccionIzquierda {
+        width: 100%;
+    }
+    .seccionDerecha {
+        width: 100%;
+        padding-top: 200px;
+        padding-left: 0px;
+    }
+}

@@ -1,0 +1,11 @@
+<!--Barra de navegacion-->
+<nav class="navbar">
+    <div class="toggle-btn">
+        <i class="fas fa-ellipsis-v"></i>
+    </div>
+    <ul class="">
+        <li class="acti"><a href="index.html"><i class="far fa-envelope"></i></a></li>
+        <li><a href="<%=request.getContextPath()%>/conusuario.do?txtAccion=cerrarSession"><i class="fas fa-sign-out-alt"></i></a></li>
+        
+    </ul>
+</nav>
