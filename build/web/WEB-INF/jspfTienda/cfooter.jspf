@@ -1,0 +1,39 @@
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <span class="copyright">Copyright &copy; Bebelú</span>
+            </div>
+            <div class="col-md-4" align="center">
+                <ul class="social-buttons">
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/bebelubebe?lang=es">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://m.facebook.com/modabebelu/?locale2=es_LA">
+                            <i class="fab fa-facebook-f"></i>
+                        
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/modabebelu/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline quicklinks">
+                    <li class="list-inline-item">
+                        <a href="#">Politicas de Privacidad</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">Terminos de Uso</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

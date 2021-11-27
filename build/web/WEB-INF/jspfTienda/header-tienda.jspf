@@ -1,0 +1,49 @@
+<%@page import="java.util.Iterator"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="soft.cise.modeloDTO.productoDTO"%>
+
+<div class="espacio"></div>
+<div class="container">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row" >
+                      <img class="card-img-top" src="resource/img/tienda/banner1.jpg" alt=""/>
+                        <div class=" carousel-caption d-block d-md-none">
+                            <h5 style="color:#000;">Third slide label</h5>
+                            <p style="color:#000;">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <input type="submit" class="btn btn-primary" value="Agregar Carrito">
+                        </div>
+                 </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                   <img class="card-img-top" src="resource/img/tienda/banner2.jpg" alt=""/>
+                        <div class=" carousel-caption d-block d-md-none">
+                            <h5 style="color:#000;">Third slide label</h5>
+                            <p style="color:#000;">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <input type="submit" class="btn btn-primary" value="Agregar Carrito">
+                        </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+               <img class="card-img-top" src="resource/img/tienda/banner3.jpg" alt=""/>
+                        <div class=" carousel-caption d-block d-md-none">
+                            <h5 style="color:#000;">Third slide label</h5>
+                            <p style="color:#000;">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <input type="submit" class="btn btn-primary" value="Agregar Carrito">
+                        </div>
+                </div>
+            </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+        </a>
+    </div>
+
+</div>

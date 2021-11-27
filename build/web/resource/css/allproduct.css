@@ -1,0 +1,37 @@
+.seccionDerecha .card {
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: all 0.25s;
+}
+
+.seccionDerecha .card:hover {
+    transform: none;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.seccionDerecha .card .card-body a {
+    font-size: 14px;
+}
+
+.card.cardoff {
+    margin-bottom: 30px;
+}
+
+.seccionDerecha .card.cardoff:hover {
+    transform: none;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+}
+
+
+.menuPago ul{
+    text-decoration: none;
+}
+
+.menuPago ul li{
+    display: inline-block;
+}
+
+.menuPago ul li i{
+    font-size: 28px;
+    padding-left: 5px;
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>comProducto</servlet-name>
+        <servlet-class>soft.cise.controlador.comProducto</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>comCatalogo</servlet-name>
+        <servlet-class>soft.cise.controlador.comCatalogo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>conUsuario</servlet-name>
+        <servlet-class>soft.cise.controlador.conUsuario</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>conReportes</servlet-name>
+        <servlet-class>soft.cise.controlador.conReportes</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>comProducto</servlet-name>
+        <url-pattern>/comproducto.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>comCatalogo</servlet-name>
+        <url-pattern>/comcatalogo.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>conUsuario</servlet-name>
+        <url-pattern>/conusuario.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>conReportes</servlet-name>
+        <url-pattern>/conreportes.do</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

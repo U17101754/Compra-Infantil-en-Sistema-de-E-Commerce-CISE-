@@ -1,0 +1,31 @@
+<%
+    HttpSession sessionOK = request.getSession();
+%>
+<section>
+    <div id="sideBar" class="active">
+        <div class="contenedor-menu">
+            <ul class="menuCabecera">
+                <li><a href="#">Administrador</a></li>
+                <li><img src="resource/img/admin/perfil2.jpg" class="imgPerfil"></li>
+                <li style="font-size: 12px;"><a><%=sessionOK.getAttribute("nombre") %></a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="sistema.jsp"><i class="icono izquierda fa fa-home"></i> Sistema</a></li>
+                <li><a href="index.jsp"><i class="icono izquierda fas fa-store"></i>Catalogo</a></li>
+                <li class=""><a href="#"><i class="icono izquierda fas fa-folder-plus"></i>Productos<i class="icono derecha fa fa-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="<%=request.getContextPath()%>/comproducto.do?txtAccion=addProducto">Registrar Producto</a></li>
+                        <li><a href="<%=request.getContextPath()%>/comproducto.do?txtAccion=listProducto">Lista Productos</a></li>
+                    </ul>
+                </li>
+                <li class=""><a href="#"><i class="icono izquierda fas fa-file-export"></i>Ventas<i class="icono derecha fa fa-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="<%=request.getContextPath()%>/comproducto.do?txtAccion=venta">Modulo Ventas</a></li>
+                    </ul>
+                </li>
+                <li class=""><a href="<%=request.getContextPath()%>/conreportes.do?txtAccion=reportes"><i class="icono izquierda far fa-file-alt"></i>Reportes</a></li>
+                <li><a href="<%=request.getContextPath()%>/conusuario.do?txtAccion=cerrarSession"><i class="icono izquierda fas fa-sign-out-alt"></i>Cerrar Sesion</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
